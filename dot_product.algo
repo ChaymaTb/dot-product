@@ -1,0 +1,17 @@
+PROCEDURE dot_product( n: INTEGER ,Var T_v1: ARRAY_OF type FLOAT ,T_v2: ARRAY_OF type FLOAT)
+VAR
+    ps : FLOAT := 0;
+    i,j: INTEGER ;
+BEGIN
+    FOR i FROM 0 TO T_v1.length STEP step  DO
+        FOR j FROM 0 TO T_v2.length STEP step  DO
+            ps := ps + T_v1[i] * T_v2[j];
+        END_FOR
+    END_FOR
+END
+ALGORITHM dot_n_product
+VAR
+    i,j,n:INTEGER;
+BEGIN
+    dot_product(n,T_v1[i],T_v2[i]);
+END
